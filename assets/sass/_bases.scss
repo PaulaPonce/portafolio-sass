@@ -5,6 +5,15 @@ body{
 h1, h2, h3, h4, ,h5, h6{
 	font-family:$title_font;
 }
+h1{
+	font-size:$h1_size;
+	padding:$padding_h1;
+}
+h2{
+	font-size:$h2_size;
+	font-weight:700;
+	padding:$padding_h2;
+}
 h4{
 	color:$darkgray_color;
 	font-weight:700;
@@ -112,10 +121,6 @@ p{
 				.carousel-caption{
 					bottom:($carousel-slide-height / 9);
 					z-index:2;
-					h1{
-						font-size:$h1_size;
-						padding:$padding_h1;
-					}
 					span{
 						font-size:$span_size;
 						padding:$padding_titleSpan;
@@ -137,19 +142,12 @@ p{
 }
 
 #features{
-
 	background-color:$white_color;
 	border-top-left-radius:8px;
 	border-top-right-radius:8px;
 	position:relative;
 	margin-top: -60px;
-	padding:$padding_sections;
-	.row:first-child{
-		padding-bottom:2em;
-	}
-	.row:nth-child(2){
-		padding-top:2em;
-	}
+	@include paddingSections();
 	.features-box {
 		& div:nth-child(1) .fa{
 			color:$pink_color;
@@ -163,5 +161,21 @@ p{
 		.fa{
 			font-size:$icon_big;
 		}
+	}
+}
+
+#about{
+	background-image: url(../img/img_city.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color:$white_color;
+	@include paddingSections();	
+	.row:first-child div:first-child{
+		background-color:$black_bg2;
+	}
+	p{
+		color:$white_color;
+		font-size:($p_size * 1.1);
 	}
 }

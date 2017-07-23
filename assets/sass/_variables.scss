@@ -9,7 +9,8 @@ $padding_3: 3em;
 $padding_5: 5em;
 
 $padding_navbar:1em 3em;
-$padding_h1:0.5em 0em;
+$padding_h1:0.5em 0;
+$padding_h2:0.5em 0;
 $padding_h4_top:1em;
 $padding_h4_bottom:0;
 $padding_titleSpan:1em 0em;
@@ -22,7 +23,7 @@ $padding_sections:4em;
 
 $transparent: transparent;
 $black_bg: rgba(0,0,0,0.8);
-$black_bg2: rgba(0,0,0,0.3);
+$black_bg2: rgba(0,0,0,0.4);
 $white_bg: rgba(255,255,255,0.1);
 $gray_bg:#ddd;
 $white_color: whitesmoke;
@@ -38,6 +39,7 @@ $section_gray: #f0f0f0;
 $footer_black: #323437;
 
 $h1_size:4em;
+$h2_size: 2.5em;
 $h5_size:1.2em;
 $span_size:1.3em;
 $p_size:1.1em;

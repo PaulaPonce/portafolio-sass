@@ -18,3 +18,13 @@
 	box-shadow: 0 0.5em 0.5em -0.4em $pink_color;
 	transform: translateY(-0.25em);
 }
+
+@mixin paddingSections(){
+	padding:$padding_sections;
+	.row:first-child{
+		padding-bottom:2em;
+	}
+	.row:nth-child(2){
+		padding-top:2em;
+	}
+}
