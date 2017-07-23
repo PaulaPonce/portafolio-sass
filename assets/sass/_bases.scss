@@ -1,0 +1,116 @@
+body{
+	@include body();
+}
+
+h1, h2, h3, h4, ,h5, h6{
+	font-family:$title_font;
+}
+
+.btn.btn-default, 
+.navbar-default li a.btn.btn-default{
+	@include button();
+	&:hover, &:focus{
+		@include button();
+		@include btnHoverFocus();
+	}
+}
+
+.container-fluid{
+	padding: $padding_0;
+	.row{
+		margin-left:0;
+		margin-right:0;
+		[class*="col-"]{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+#header{
+	height: 100vh;
+	background-color:$black_bg2;
+
+	.nav-transparent{
+		background-color:$transparent;
+		border-color:$transparent;
+	}
+	.nav-white{
+		background-color:$white_color;
+		border-color:$white_color;
+		.navbar-header{
+			.navbar-brand{
+				color:$darkgray_color;;
+			}
+		}
+		.navbar-collapse{
+			.navbar-nav{
+				li{
+					a, a:hover{
+						color:$darkgray_color;
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-default{
+		@extend .nav-transparent;
+		padding:$padding_1 $padding_3;
+		.navbar-brand{
+			color:$white_color;
+			text-transform:$uppercase;
+			&:hover{
+				color:$white_color;
+			}
+		}
+		.navbar-nav{
+			li{
+				a, a:hover{
+					color:$white_color;
+					text-transform:$uppercase;
+				}
+			}
+			li:hover{
+				background-color: $white_bg;
+			}
+			.dropdown-menu{
+				li a{
+					color:$darkgray_color;
+					&:hover{
+						color:$white_color;
+						background-color:$pink_color;
+					}
+				}
+			}		
+		}
+	}
+
+	.carousel{
+		.carousel-inner{
+			.item{
+				img{
+					width: 100%;
+					height: 90vh;
+
+				}
+				.carousel-caption{
+					bottom: 15%;
+					h1{
+						font-size:$h1_size;
+						padding:$padding_05 $padding_0;
+					}
+					span{
+						font-size:$span_size;
+						padding:$padding_1 $padding_0;
+					}
+					p{
+						padding-top: $padding_5;
+					}
+				}
+			}
+		}
+	}
+}
+
+

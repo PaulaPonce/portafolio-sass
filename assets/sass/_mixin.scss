@@ -1,0 +1,19 @@
+@mixin body(){
+	font-family: $body_font;
+	margin: $margin_0;
+	padding: $padding_0;
+}
+
+@mixin button(){
+	color:$white_color;
+	background-color:$pink_color;
+	border:$border_btn;
+	text-transform:$uppercase;
+	transition: 0.25s;
+}
+
+@mixin btnHoverFocus(){
+	background-color:$pink_color;
+	box-shadow: 0 0.5em 0.5em -0.4em $pink_color;
+	transform: translateY(-0.25em);
+}

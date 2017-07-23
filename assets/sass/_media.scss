@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+	#header{
+		.navbar-default{
+			color:$white_color;
+			background-color:$black_bg;
+			border-color:$black_color;
+			.navbar-header{
+				.navbar-brand{
+					color:$white_color;
+				}
+			}
+			.navbar-toggle{
+				.icon-bar{
+					background-color:$white_color;
+				}
+				&:hover{
+					background-color:$transparent;
+				}
+			}
+		}
+	}	
+}
