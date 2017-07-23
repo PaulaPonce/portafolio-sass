@@ -5799,11 +5799,28 @@ button.close {
     display: none !important; } }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #ddd;
   margin: 0px;
   padding: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif; }
+
+h4 {
+  color: #3c4858;
+  font-weight: 700;
+  padding-top: 1em;
+  padding-bottom: 0; }
+
+h5 {
+  color: #999;
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+p {
+  color: #999;
+  font-size: 1.1em;
+  line-height: 1.5714285714em; }
 
 .btn.btn-default,
 .navbar-default li a.btn.btn-default {
@@ -5834,8 +5851,7 @@ h1, h2, h3, h4, h5, h6 {
       padding-right: 0px; }
 
 #header {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3); }
+  height: 90vh; }
   #header .nav-transparent, #header .navbar-default {
     background-color: transparent;
     border-color: transparent; }
@@ -5880,6 +5896,26 @@ h1, h2, h3, h4, h5, h6 {
   #header .carousel .carousel-control .fa {
     font-size: 2em;
     margin-top: 7em; }
+
+#features {
+  background-color: whitesmoke;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+  margin-top: -60px;
+  padding: 4em; }
+  #features .row:first-child {
+    padding-bottom: 2em; }
+  #features .row:nth-child(2) {
+    padding-top: 2em; }
+  #features .features-box div:nth-child(1) .fa {
+    color: #e91e63; }
+  #features .features-box div:nth-child(2) .fa {
+    color: #00bcd4; }
+  #features .features-box div:nth-child(3) .fa {
+    color: #4caf50; }
+  #features .features-box .fa {
+    font-size: 4.5em; }
 
 @media (max-width: 768px) {
   #header .navbar-default {

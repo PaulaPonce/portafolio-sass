@@ -5,6 +5,23 @@ body{
 h1, h2, h3, h4, ,h5, h6{
 	font-family:$title_font;
 }
+h4{
+	color:$darkgray_color;
+	font-weight:700;
+	padding-top:$padding_h4_top;
+	padding-bottom:$padding_h4_bottom;
+}
+h5{
+	color:$lightgray_color;
+	font-size:$h5_size;
+	line-height:($h5_size / 0.8);
+}
+
+p{
+	color:$lightgray_color;
+	font-size:$p_size;
+	line-height:($p_size / 0.7);
+}
 
 .btn.btn-default, 
 .navbar-default li a.btn.btn-default{
@@ -28,8 +45,7 @@ h1, h2, h3, h4, ,h5, h6{
 }
 
 #header{
-	height: 100vh;
-	background-color:$black_bg2;
+	height: 90vh;
 	.nav-transparent{
 		background-color:$transparent;
 		border-color:$transparent;
@@ -120,4 +136,32 @@ h1, h2, h3, h4, ,h5, h6{
 	}
 }
 
+#features{
 
+	background-color:$white_color;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	position:relative;
+	margin-top: -60px;
+	padding:$padding_sections;
+	.row:first-child{
+		padding-bottom:2em;
+	}
+	.row:nth-child(2){
+		padding-top:2em;
+	}
+	.features-box {
+		& div:nth-child(1) .fa{
+			color:$pink_color;
+		}
+		& div:nth-child(2) .fa{
+			color:$lightblue_color;
+		}
+		& div:nth-child(3) .fa{
+			color:$green_color;
+		}
+		.fa{
+			font-size:$icon_big;
+		}
+	}
+}
