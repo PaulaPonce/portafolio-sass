@@ -16,13 +16,13 @@ h1, h2, h3, h4, ,h5, h6{
 }
 
 .container-fluid{
-	padding: $padding_0;
+	padding:$padding_0;
 	.row{
-		margin-left:0;
-		margin-right:0;
+		margin-left:$margin_0;
+		margin-right:$margin_0;
 		[class*="col-"]{
-			padding-left: 0;
-			padding-right: 0;
+			padding-left:$padding_0;
+			padding-right:$padding_0;
 		}
 	}
 }
@@ -30,7 +30,6 @@ h1, h2, h3, h4, ,h5, h6{
 #header{
 	height: 100vh;
 	background-color:$black_bg2;
-
 	.nav-transparent{
 		background-color:$transparent;
 		border-color:$transparent;
@@ -56,7 +55,7 @@ h1, h2, h3, h4, ,h5, h6{
 
 	.navbar-default{
 		@extend .nav-transparent;
-		padding:$padding_1 $padding_3;
+		padding:$padding_navbar;
 		.navbar-brand{
 			color:$white_color;
 			text-transform:$uppercase;
@@ -91,23 +90,31 @@ h1, h2, h3, h4, ,h5, h6{
 			.item{
 				img{
 					width: 100%;
-					height: 90vh;
+					height:$carousel-slide-height;
 
 				}
 				.carousel-caption{
-					bottom: 15%;
+					bottom:($carousel-slide-height / 9);
+					z-index:2;
 					h1{
 						font-size:$h1_size;
-						padding:$padding_05 $padding_0;
+						padding:$padding_h1;
 					}
 					span{
 						font-size:$span_size;
-						padding:$padding_1 $padding_0;
+						padding:$padding_titleSpan;
 					}
 					p{
-						padding-top: $padding_5;
+						padding-top:$margin_btnTitle;
 					}
 				}
+			}
+		}
+
+		.carousel-control {
+			.fa{
+				font-size:$carousel-control-font-size;
+				margin-top:($carousel-control-font-size * 3.5);
 			}
 		}
 	}
