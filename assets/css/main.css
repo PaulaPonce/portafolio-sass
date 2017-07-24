@@ -6177,6 +6177,40 @@ p {
         margin-top: 15px;
         margin-bottom: 15px; }
 
+#footer {
+  background-color: #323437;
+  padding: 4em; }
+  #footer h2, #footer h5, #footer p {
+    color: whitesmoke; }
+  #footer .row:first-child {
+    padding-bottom: 2em; }
+  #footer .row:last-child {
+    padding-top: 2em; }
+  #footer #footer-above p {
+    color: #999; }
+  #footer #footer-above h5 {
+    font-weight: 700; }
+  #footer #footer-above .list-group-item {
+    color: #999;
+    background-color: transparent;
+    border: none; }
+    #footer #footer-above .list-group-item .fa {
+      color: whitesmoke; }
+    #footer #footer-above .list-group-item a {
+      color: #999;
+      font-size: .7em; }
+      #footer #footer-above .list-group-item a:hover {
+        color: #e91e63; }
+    #footer #footer-above .list-group-item:hover {
+      background-color: #323437; }
+  #footer #footer-below span {
+    color: whitesmoke; }
+  #footer #footer-below a {
+    color: whitesmoke;
+    font-weight: 700; }
+    #footer #footer-below a:hover {
+      color: #e91e63; }
+
 @media (max-width: 768px) {
   #header .navbar-default {
     color: whitesmoke;

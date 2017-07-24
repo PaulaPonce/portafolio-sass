@@ -93,7 +93,6 @@ p{
 			}
 		}
 	}
-
 	.navbar-default{
 		@extend .nav-transparent;
 		padding:$padding_navbar;
@@ -125,14 +124,12 @@ p{
 			}
 		}
 	}
-
 	.carousel{
 		.carousel-inner{
 			.item{
 				img{
 					width: 100%;
 					height:$carousel-slide-height;
-
 				}
 				.carousel-caption{
 					bottom:($carousel-slide-height / 9);
@@ -147,7 +144,6 @@ p{
 				}
 			}
 		}
-
 		.carousel-control {
 			.fa{
 				font-size:$carousel-control-font-size;
@@ -372,9 +368,9 @@ p{
 	@include backgroundImg();
 	@include paddingSections();
 	.row .text-left{
-				background-color:$black_bg2;
-				padding-bottom:4em;
-			}
+		background-color:$black_bg2;
+		padding-bottom:4em;
+	}
 	.contact-box{
 		h4, span{
 			color:$white_color;
@@ -417,6 +413,50 @@ p{
 					margin-top:15px;
 					margin-bottom:15px;
 				}
+			}
+		}
+	}
+}
+
+#footer{
+	background-color:$footer_black;
+	@include whiteColor();
+	@include paddingSections();
+	#footer-above{
+		p{
+			color:$lightgray_color;
+		}
+		h5{
+			font-weight:700;
+		}
+		.list-group-item{
+			color:$lightgray_color;
+			background-color:$transparent;
+			border: none;
+			.fa{
+				color:$white_color;
+			}
+			a{
+				color:$lightgray_color;
+				font-size:.7em;
+				&:hover{
+					color:$pink_color;
+				}
+			}
+			&:hover{
+				background-color:$footer_black;
+			}
+		}
+	}
+	#footer-below{
+		span{
+			color:$white_color;
+		}
+		a{
+			color:$white_color;
+			font-weight:700;
+			&:hover{
+				color:$pink_color;
 			}
 		}
 	}
