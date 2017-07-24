@@ -182,13 +182,15 @@ p{
 
 #about{
 	background-image: url(../img/img_city.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	@include background();
 	background-attachment: fixed;
 	color:$white_color;
 	@include paddingSections();	
 	.row:first-child div:first-child{
 		background-color:$black_bg2;
+	}
+	h2{
+		color:$white_color;
 	}
 	p{
 		color:$white_color;
@@ -304,5 +306,37 @@ p{
 		margin-right: auto;
 		vertical-align: middle;
 		box-shadow:$shadow_img;
+	}
+}
+
+#subscribe{
+background-color:$black_bg2;
+	background-image: url(../img/about.jpg);
+	background-position:0px 0px;
+	@include background();
+	@include paddingSections();
+	.row:first-child div:first-child{
+		background-color:$black_bg2;
+	}
+	h2, h5{
+		color:$white_color;
+	}
+	form{
+		background-color:$white_color;
+		padding:$padding_form;
+		border-radius:10px;
+		label{
+			padding:0 .2em;
+			.fa{
+				font-size:1.5em;
+			}
+		}
+		input{
+			padding:1.3em 1em;
+			margin:0 .5em;
+		}
+		button{
+			padding:.5em 2em;
+		}
 	}
 }

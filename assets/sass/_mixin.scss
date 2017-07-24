@@ -34,6 +34,11 @@
 	border:none;
 }
 
+@mixin background(){
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 @mixin social(){
 	.fa-facebook{
 		color:#3b5998;
