@@ -248,7 +248,7 @@
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</header>
 	
 	<!-- Features Section -->
@@ -706,7 +706,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
 				<h2>Get in Touch</h2>
 				<h5>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h5>
-				<div>
+				<div class="contact-box">
 					<div>
 						<h4><i class="fa fa-map-marker" aria-hidden="true"></i> Find us at the office</h4>
 						<span>
@@ -730,31 +730,29 @@
 				</div>
 			</div>
 			<!-- Contact Form -->
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumbnail">
-				<div>
+			<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12 thumbnail">
+				<div class="title-form">
 					<h4>Contact Us</h4>
 				</div>
-				<div>
+				<div class="form-box">
 					<form>
-						<div class="form-inline">
-							<div class="form-group">
-								<label for="inputName">Your Name</label>
-								<input type="text" class="form-control" id="inputName">
-							</div>
-							<div class="form-group">
-								<label for="inputEmail">Your Email</label>
-								<input type="email" class="form-control" id="inputEmail">
-							</div>
+						<div class="form-group">
+							<label class="sr-only" for="inputName">Name</label>
+							<input type="text" class="form-control" id="inputName" placeholder="Your Name">
 						</div>
 						<div class="form-group">
-							<label for="inputSubject">Subject</label>
-							<input type="text" class="form-control" id="inputSubject">
+							<label class="sr-only" for="inputEmail">Email</label>
+							<input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
 						</div>
 						<div class="form-group">
-							<label for="inputMessage">Your Message</label>
-							<textarea class="form-control" id="inputMessage" rows="6"></textarea>
+							<label class="sr-only" for="inputSubject">Subject</label>
+							<input type="text" class="form-control" id="inputSubject" placeholder="Subject">
 						</div>
-						<button type="submit" class="btn btn-default">Send Message</button>
+						<div class="form-group">
+							<label class="sr-only" for="inputMessage">Your Message</label>
+							<textarea class="form-control" id="inputMessage" rows="6" placeholder="Your Message"></textarea>
+						</div>
+						<button type="submit" class="btn btn-default pull-right">Send Message</button>
 					</form>
 				</div>
 			</div>

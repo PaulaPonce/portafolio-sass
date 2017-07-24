@@ -39,6 +39,21 @@
 	background-repeat: no-repeat;
 }
 
+@mixin whiteColor(){
+	h2, h5, p{
+		color:$white_color;
+	}
+}
+
+@mixin backgroundImg(){
+	background-image: url(../img/img_city.jpg);
+}
+
+@mixin relativeTop(){
+	position:relative;
+	margin-top: -30px;
+}
+
 @mixin social(){
 	.fa-facebook{
 		color:#3b5998;

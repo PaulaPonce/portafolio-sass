@@ -66,7 +66,7 @@ p{
 }
 
 .thumbnail{
-	border-radius:10px;
+	border-radius:$border_radius;
 }
 
 #header{
@@ -122,7 +122,7 @@ p{
 						background-color:$pink_color;
 					}
 				}
-			}		
+			}
 		}
 	}
 
@@ -181,11 +181,11 @@ p{
 }
 
 #about{
-	background-image: url(../img/img_city.jpg);
+	@include whiteColor();
+	@include backgroundImg();
 	@include background();
 	background-attachment: fixed;
-	color:$white_color;
-	@include paddingSections();	
+	@include paddingSections();
 	.row:first-child div:first-child{
 		background-color:$black_bg2;
 	}
@@ -204,8 +204,7 @@ p{
 	.thumbnail{
 		padding:$thumbnail_padding;
 		img{
-			position:relative;
-			margin-top: -30px;
+			@include relativeTop();
 			box-shadow:$shadow_img;
 			&:hover{
 				box-shadow: 0 0.8em 0.8em -0.4em $pink_color;
@@ -228,7 +227,7 @@ p{
 				color:$lightgray_color;
 			}
 		}
-	}		
+	}
 }
 
 #portfolio{
@@ -310,7 +309,7 @@ p{
 }
 
 #subscribe{
-	background-color:$black_bg2;
+	@include whiteColor();
 	background-image: url(../img/about.jpg);
 	background-position:0px 0px;
 	@include background();
@@ -318,13 +317,10 @@ p{
 	.row:first-child div:first-child{
 		background-color:$black_bg2;
 	}
-	h2, h5{
-		color:$white_color;
-	}
 	form{
 		background-color:$white_color;
 		padding:$padding_form;
-		border-radius:10px;
+		border-radius:$border_radius;
 		label{
 			padding:0 .2em;
 			.fa{
@@ -366,7 +362,62 @@ p{
 						color:$pink_color;
 					}
 				}
-			}	
+			}
 		}
-	}	
+	}
+}
+
+#contact{
+	@include whiteColor();
+	@include backgroundImg();
+	@include paddingSections();
+	.row .text-left{
+				background-color:$black_bg2;
+				padding-bottom:4em;
+			}
+	.contact-box{
+		h4, span{
+			color:$white_color;
+		}
+	}
+	.thumbnail{
+		.title-form{
+			background-color:$pink_color;
+			border-radius:$border_small;
+			@include relativeTop();
+			margin-left:1em;
+			margin-right:1em;
+			box-shadow:$shadow_img;
+			h4{
+				color:$white_color;
+				padding-top: 1.5em;
+				padding-bottom: 1.5em;
+			}
+		}
+		.form-box{
+			padding:($padding_form * 2);
+			form{
+				padding:$padding_form 0;
+				.form-group .form-control{
+					-webkit-box-shadow: none !important;
+					-moz-box-shadow: none !important;
+					box-shadow: none !important;
+					border-bottom:$border_form;
+					border-radius: 0;
+				}
+				label{
+					color:$lightgray_color;
+					font-weight:400;
+				}
+				input{
+					border:$transparent;
+					border-bottom:$border_gray;
+				}
+				button{
+					margin-top:15px;
+					margin-bottom:15px;
+				}
+			}
+		}
+	}
 }
