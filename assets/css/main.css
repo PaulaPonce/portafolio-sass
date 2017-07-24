@@ -5973,6 +5973,19 @@ p {
     #products .caption span:last-child a {
       color: #999; }
 
+#portfolio {
+  background-color: whitesmoke;
+  padding: 4em; }
+  #portfolio .row:first-child {
+    padding-bottom: 2em; }
+  #portfolio .row:last-child {
+    padding-top: 2em; }
+  #portfolio .thumbnail {
+    background-color: transparent;
+    border: none; }
+    #portfolio .thumbnail img {
+      box-shadow: 0 0.6em 0.6em -0.4em rgba(0, 0, 0, 0.4); }
+
 @media (max-width: 768px) {
   #header .navbar-default {
     color: whitesmoke;
