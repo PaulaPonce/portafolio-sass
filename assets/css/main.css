@@ -6055,6 +6055,20 @@ p {
       transform: translateY(-1em);
       transition-duration: 0.5s; }
 
+#testimonial {
+  background-color: whitesmoke;
+  padding: 4em; }
+  #testimonial .row:first-child {
+    padding-bottom: 2em; }
+  #testimonial .row:last-child {
+    padding-top: 2em; }
+  #testimonial img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    box-shadow: 0 0.6em 0.6em -0.4em rgba(0, 0, 0, 0.4); }
+
 @media (max-width: 768px) {
   #header .navbar-default {
     color: whitesmoke;
