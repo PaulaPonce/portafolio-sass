@@ -10,9 +10,15 @@ h1{
 	padding:$padding_h1;
 }
 h2{
+	color:$darkgray_color;
 	font-size:$h2_size;
 	font-weight:700;
 	padding:$padding_h2;
+}
+h3{
+	color:$darkgray_color;
+	font-size:$h3_size;
+	font-weight:700;
 }
 h4{
 	color:$darkgray_color;
@@ -230,7 +236,7 @@ p{
 		@include thumbnailTransparent();
 		&:hover{
 			background-color:$pink_bg;
-			border:$border_btn;
+			border:$border_pink;
 		}
 		img{
 			box-shadow:$shadow_img;
@@ -252,6 +258,39 @@ p{
 			font-size:1.2em;
 			padding:1em;
 			@include social();
+		}
+	}
+}
+
+#pricing{
+	background-color:$section_gray;
+	@include paddingSections();
+	.thumbnail{
+		padding:$pricing_padding;
+		box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+		sup, sub{
+			color:$gray_color;
+			font-size:$supsub_size;
+			font-weight:400;
+		}
+		.list-group{
+			.list-group-item{
+				color:$lightgray_color;
+				background-color:$transparent;
+				border:none;
+				border-bottom: 1px solid #ddd;
+				&:last-child{
+					border:none;
+				}
+				strong{
+					color:$darkgray_color;
+				}
+			}
+		}
+		&:hover{
+			border:$border_pink;
+			transform: translateY(-1em);
+			transition-duration: 0.5s;
 		}
 	}
 }

@@ -5811,9 +5811,15 @@ h1 {
   padding: 0.5em 0; }
 
 h2 {
+  color: #3c4858;
   font-size: 2.5em;
   font-weight: 700;
   padding: 0.5em 0; }
+
+h3 {
+  color: #3c4858;
+  font-size: 3em;
+  font-weight: 700; }
 
 h4 {
   color: #3c4858;
@@ -6020,6 +6026,34 @@ p {
       color: #ea4c89; }
     #team .caption .team-social a .fa-github {
       color: #333; }
+
+#pricing {
+  background-color: #f0f0f0;
+  padding: 4em; }
+  #pricing .row:first-child {
+    padding-bottom: 2em; }
+  #pricing .row:last-child {
+    padding-top: 2em; }
+  #pricing .thumbnail {
+    padding: 2em;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+    #pricing .thumbnail sup, #pricing .thumbnail sub {
+      color: #777;
+      font-size: 0.5em;
+      font-weight: 400; }
+    #pricing .thumbnail .list-group .list-group-item {
+      color: #999;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #ddd; }
+      #pricing .thumbnail .list-group .list-group-item:last-child {
+        border: none; }
+      #pricing .thumbnail .list-group .list-group-item strong {
+        color: #3c4858; }
+    #pricing .thumbnail:hover {
+      border: 1px solid #e91e63;
+      transform: translateY(-1em);
+      transition-duration: 0.5s; }
 
 @media (max-width: 768px) {
   #header .navbar-default {
