@@ -6100,6 +6100,28 @@ p {
     #subscribe form button {
       padding: .5em 2em; }
 
+#blog {
+  background-color: whitesmoke;
+  padding: 4em; }
+  #blog .row:first-child {
+    padding-bottom: 2em; }
+  #blog .row:last-child {
+    padding-top: 2em; }
+  #blog .row:last-child div:nth-child(1) .thumbnail .caption h6 a {
+    color: #e91e63; }
+  #blog .row:last-child div:nth-child(2) .thumbnail .caption h6 a {
+    color: #00bcd4; }
+  #blog .row:last-child div:nth-child(3) .thumbnail .caption h6 a {
+    color: #f44336; }
+  #blog .row:last-child img {
+    box-shadow: 0 0.6em 0.6em -0.4em rgba(0, 0, 0, 0.4); }
+  #blog .row:last-child .caption p {
+    font-size: 1em; }
+    #blog .row:last-child .caption p a {
+      color: #3c4858; }
+      #blog .row:last-child .caption p a:hover {
+        color: #e91e63; }
+
 @media (max-width: 768px) {
   #header .navbar-default {
     color: whitesmoke;

@@ -310,7 +310,7 @@ p{
 }
 
 #subscribe{
-background-color:$black_bg2;
+	background-color:$black_bg2;
 	background-image: url(../img/about.jpg);
 	background-position:0px 0px;
 	@include background();
@@ -339,4 +339,34 @@ background-color:$black_bg2;
 			padding:.5em 2em;
 		}
 	}
+}
+
+#blog{
+	background-color:$white_color;
+	@include paddingSections();
+	.row:last-child {
+		div:nth-child(1) .thumbnail .caption h6 a{
+			color:$pink_color;
+		}
+		div:nth-child(2) .thumbnail .caption h6 a{
+			color:$lightblue_color;
+		}
+		div:nth-child(3) .thumbnail .caption h6 a{
+			color:$red_color;
+		}
+		img{
+			box-shadow:$shadow_img;
+		}
+		.caption{
+			p {
+			font-size:$p_small;
+				a{
+					color:$darkgray_color;
+					&:hover{
+						color:$pink_color;
+					}
+				}
+			}	
+		}
+	}	
 }
