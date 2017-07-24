@@ -5826,6 +5826,12 @@ h5 {
   font-size: 1.2em;
   line-height: 1.5em; }
 
+h6 {
+  color: #e91e63;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
+
 p {
   color: #999;
   font-size: 1.1em;
@@ -5858,6 +5864,9 @@ p {
     .container-fluid .row [class*="col-"] {
       padding-left: 0px;
       padding-right: 0px; }
+
+.thumbnail {
+  border-radius: 10px; }
 
 #header {
   height: 90vh; }
@@ -5912,7 +5921,7 @@ p {
   padding: 4em; }
   #features .row:first-child {
     padding-bottom: 2em; }
-  #features .row:nth-child(2) {
+  #features .row:last-child {
     padding-top: 2em; }
   #features .features-box div:nth-child(1) .fa {
     color: #e91e63; }
@@ -5932,13 +5941,37 @@ p {
   padding: 4em; }
   #about .row:first-child {
     padding-bottom: 2em; }
-  #about .row:nth-child(2) {
+  #about .row:last-child {
     padding-top: 2em; }
   #about .row:first-child div:first-child {
     background-color: rgba(0, 0, 0, 0.4); }
   #about p {
     color: whitesmoke;
     font-size: 1.21em; }
+
+#products {
+  background-color: #f0f0f0;
+  padding: 4em; }
+  #products .row:first-child {
+    padding-bottom: 2em; }
+  #products .row:last-child {
+    padding-top: 2em; }
+  #products .thumbnail {
+    padding: 0 0.5em; }
+    #products .thumbnail img {
+      position: relative;
+      margin-top: -30px;
+      box-shadow: 0 0.6em 0.6em -0.4em rgba(0, 0, 0, 0.4); }
+      #products .thumbnail img:hover {
+        box-shadow: 0 0.8em 0.8em -0.4em #e91e63;
+        transform: translateY(-1em);
+        transition-duration: 0.3s; }
+  #products .caption span {
+    font-size: 1.3em; }
+    #products .caption span:first-child {
+      color: #777; }
+    #products .caption span:last-child a {
+      color: #999; }
 
 @media (max-width: 768px) {
   #header .navbar-default {

@@ -25,6 +25,12 @@ h5{
 	font-size:$h5_size;
 	line-height:($h5_size / 0.8);
 }
+h6{
+	color:$pink_color;
+	font-family:$body_font;
+	text-transform:$uppercase;
+	font-weight:700;
+}
 
 p{
 	color:$lightgray_color;
@@ -51,6 +57,10 @@ p{
 			padding-right:$padding_0;
 		}
 	}
+}
+
+.thumbnail{
+	border-radius:10px;
 }
 
 #header{
@@ -177,5 +187,33 @@ p{
 	p{
 		color:$white_color;
 		font-size:($p_size * 1.1);
+	}
+}
+
+#products{
+	background-color:$section_gray;
+	@include paddingSections();
+	.thumbnail{
+		padding:$thumbnail_padding;
+		img{
+			position:relative;
+			margin-top: -30px;
+				box-shadow: 0 0.6em 0.6em -0.4em rgba(0,0,0,.4);
+				&:hover{
+					box-shadow: 0 0.8em 0.8em -0.4em $pink_color;
+					transform: translateY(-1em);
+					transition-duration: 0.3s;
+				}
+		}
+	}
+	
+	.caption span{
+		font-size:$span_size;
+		&:first-child{
+			color:$gray_color;
+		}
+		&:last-child a{
+			color:$lightgray_color;
+		}
 	}
 }

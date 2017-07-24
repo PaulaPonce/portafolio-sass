@@ -14,6 +14,7 @@ $padding_h2:0.5em 0;
 $padding_h4_top:1em;
 $padding_h4_bottom:0;
 $padding_titleSpan:1em 0em;
+$thumbnail_padding: 0 .5em;
 $margin_btnTitle:5em;
 
 $carousel-control-font-size:2em;
@@ -25,7 +26,10 @@ $transparent: transparent;
 $black_bg: rgba(0,0,0,0.8);
 $black_bg2: rgba(0,0,0,0.4);
 $white_bg: rgba(255,255,255,0.1);
+$section_gray: #f0f0f0;
 $gray_bg:#ddd;
+$footer_black: #323437;
+
 $white_color: whitesmoke;
 $black_color: black;
 $lightgray_color: #999;
@@ -35,12 +39,11 @@ $pink_color: #e91e63;
 $lightblue_color: #00bcd4;
 $red_color: #f44336;
 $green_color: #4caf50;
-$section_gray: #f0f0f0;
-$footer_black: #323437;
 
 $h1_size:4em;
 $h2_size: 2.5em;
 $h5_size:1.2em;
+$span_small:1em;
 $span_size:1.3em;
 $p_size:1.1em;
 $icon_big:4.5em;
