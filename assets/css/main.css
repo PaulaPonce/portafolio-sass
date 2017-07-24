@@ -5827,7 +5827,7 @@ h5 {
   line-height: 1.5em; }
 
 h6 {
-  color: #e91e63;
+  color: #777;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
@@ -5966,6 +5966,8 @@ p {
         box-shadow: 0 0.8em 0.8em -0.4em #e91e63;
         transform: translateY(-1em);
         transition-duration: 0.3s; }
+  #products .caption h6 {
+    color: #e91e63; }
   #products .caption span {
     font-size: 1.3em; }
     #products .caption span:first-child {
@@ -5983,8 +5985,41 @@ p {
   #portfolio .thumbnail {
     background-color: transparent;
     border: none; }
+    #portfolio .thumbnail:hover {
+      background-color: rgba(233, 30, 99, 0.8);
+      border: 1px solid #e91e63; }
     #portfolio .thumbnail img {
       box-shadow: 0 0.6em 0.6em -0.4em rgba(0, 0, 0, 0.4); }
+
+#team {
+  background-color: whitesmoke;
+  padding: 4em; }
+  #team .row:first-child {
+    padding-bottom: 2em; }
+  #team .row:last-child {
+    padding-top: 2em; }
+  #team .thumbnail {
+    background-color: transparent;
+    border: none; }
+    #team .thumbnail img {
+      box-shadow: 0 0.6em 0.6em -0.4em rgba(0, 0, 0, 0.4); }
+  #team .caption .team-social a {
+    font-size: 1.2em;
+    padding: 1em; }
+    #team .caption .team-social a .fa-facebook {
+      color: #3b5998; }
+    #team .caption .team-social a .fa-google-plus {
+      color: #dd4b39; }
+    #team .caption .team-social a .fa-twitter {
+      color: #55acee; }
+    #team .caption .team-social a .fa-linkedin {
+      color: #0976b4; }
+    #team .caption .team-social a .fa-pinterest {
+      color: #cc2127; }
+    #team .caption .team-social a .fa-dribbble {
+      color: #ea4c89; }
+    #team .caption .team-social a .fa-github {
+      color: #333; }
 
 @media (max-width: 768px) {
   #header .navbar-default {

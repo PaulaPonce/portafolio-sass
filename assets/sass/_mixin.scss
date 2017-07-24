@@ -28,3 +28,32 @@
 		padding-top:2em;
 	}
 }
+
+@mixin thumbnailTransparent(){
+	background-color:$transparent;
+	border:none;
+}
+
+@mixin social(){
+	.fa-facebook{
+		color:#3b5998;
+	}
+	.fa-google-plus{
+		color:#dd4b39;
+	}
+	.fa-twitter{
+		color:#55acee;
+	}
+	.fa-linkedin{
+		color: #0976b4;
+	}
+	.fa-pinterest{
+		color: #cc2127;
+	}
+	.fa-dribbble{
+		color: #ea4c89;
+	}
+	.fa-github{
+		color: #333;
+	}
+}
